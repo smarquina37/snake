@@ -29,16 +29,16 @@ move();
 let timerId = setInterval(move, 1000);
 
 function control(e) {
-  if (e.key === 'D' || e.key === 'd') {
+  if (e.key === 'ArrowRight') {
     console.log('right pressed');
     direction = 1;
-  } else if (e.key === 'W' || e.key === 'w') {
+  } else if (e.key === 'ArrowUp') {
     console.log('up pressed');
     direction = -width;
-  } else if (e.key === 'A' || e.key === 'a') {
+  } else if (e.key === 'ArrowLeft') {
     console.log('left pressed');
     direction = -1;
-  } else if (e.key === 'Z' || e.key === 'z') {
+  } else if (e.key === 'ArrowDown') {
     console.log('down pressed');
     direction = +width;
   }
