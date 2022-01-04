@@ -3,6 +3,9 @@ html, body {
     padding: 10;
     text-align: center;
     font-family: 'Bellefair', serif;
+    background: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1 {
     font-size: 70px;
@@ -19,9 +22,10 @@ h2 {
     width: 200px;
     height: 200px;
     border: solid 2px green;
-    background: url('images/green-pattern.jpg');
+    /* background: url('images/check.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background: black;
 }
 
 .square {
@@ -30,16 +34,21 @@ h2 {
 }
 
 .start {
-    border-radius: 10%;
+    border-radius: 5%;
     background: palevioletred;
     border: none;
-    padding: 15px 10px;
+    padding: 12px 10px;
     font-size: 16px;
     font-style: bold;
 }
 
+.start:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
 .snake {
-  background-color: yellow;
+  background-color: greenyellow;
 }
 
 .apple {
